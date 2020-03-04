@@ -23,9 +23,25 @@ return valueFromFunc()
   }
   const modifyNumber = function(num , funct){
     return funct(num)
-    
-  }
 
+  }
+const modifyAnything = function(anything, functions){
+  return functions(anything)
+}
+
+const twoFuncs = function(funct1, funct2){
+  return funct2(funct1())
+}
+
+const threeFuncs = function(fun1, fun2, fun3){
+  return fun3(fun2(fun1()))
+}
+const twoValues = function(x,y, valuepls){
+  return valuepls(x,y)
+}
+const twoValuesRTL = function(val1, val2 ,functionForVal){
+  return functionForVal(val2, val1)
+}
 
 /********************************
  * OUR CODE HERE - DON'T TOUCH! *
