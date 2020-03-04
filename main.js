@@ -1,8 +1,30 @@
 /******************
  * YOUR CODE HERE *
  ******************/
+const call = function(value){
+  value()
+}
 
+const callTwice = function(thing){
+  thing()
+  thing()
+}
+const callXTimes = function(funcy,x){
+  for(let i = 0; i < x; i++){
+    funcy(x)
+  }
+}
+const returnFromFunc = function(valueFromFunc){
 
+return valueFromFunc()
+}
+  const modifyString = function(str, functi){
+        return functi(str)
+  }
+  const modifyNumber = function(num , funct){
+    return funct(num)
+    
+  }
 
 
 /********************************
@@ -63,6 +85,7 @@ module.exports = {
   modifyNumber,
   modifyAnything,
   twoFuncs,
+  threeFuncs,
   twoValues,
   twoValuesRTL,
 }
